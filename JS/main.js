@@ -107,7 +107,6 @@ function finalizarCompra() {
 }
 
 // Inicio del programa
-debugger
 saludar();
 
 let opcion;
