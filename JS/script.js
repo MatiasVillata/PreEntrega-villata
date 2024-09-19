@@ -5,10 +5,9 @@ const productContent = document.querySelector('.product-content');
 let articulosCarrito = [];
 let productos = [];
 
-// Listeners
 cargarEventListeners();
 function cargarEventListeners() {
-    // Cargar productos desde el archivo JSON
+    // Cargar productos desde el JSON
     fetch('productos.json')
         .then(response => response.json())
         .then(data => {
@@ -17,7 +16,7 @@ function cargarEventListeners() {
         })
         .catch(error => console.error('Error al cargar productos:', error));
 
-    // Agregar producto cuando se presiona "Agregar al Carrito"
+    // Agregar producto 
     productContent.addEventListener('click', agregarProducto);
 
     // Elimina productos del carrito
@@ -31,7 +30,7 @@ function cargarEventListeners() {
     });
 }
 
-// Función para generar productos en el HTML
+// Función para generar productos
 function generarProductos() {
     productos.forEach(producto => {
         const { id, imagen, titulo, descripcion, precio } = producto;
@@ -50,7 +49,6 @@ function generarProductos() {
     });
 }
 
-// Función para agregar producto al carrito
 function agregarProducto(e) {
     e.preventDefault();
     if (e.target.classList.contains('agregar-carrito')) {
@@ -60,7 +58,6 @@ function agregarProducto(e) {
     }
 }
 
-// Función para eliminar producto del carrito
 function eliminarProducto(e) {
     if (e.target.classList.contains('borrar-producto')) {
         e.preventDefault(); // Prevenir comportamiento predeterminado del enlace
@@ -74,9 +71,7 @@ function eliminarProducto(e) {
     }
 }
 
-// Lee el contenido del producto seleccionado y extrae la información
 function leerDatosProducto(producto) {
-    // Crear un objeto con la información del producto actual
     const infoProducto = {
         imagen: producto.imagen,
         titulo: producto.titulo,
@@ -85,7 +80,6 @@ function leerDatosProducto(producto) {
         cantidad: 1
     }
 
-    // Revisa si un elemento ya existe en el carrito
     const existe = articulosCarrito.some(producto => producto.id === infoProducto.id);
     if (existe) {
         // Actualizamos la cantidad
@@ -99,20 +93,18 @@ function leerDatosProducto(producto) {
         });
         articulosCarrito = [...productos];
     } else {
-        // Agrega elementos al arreglo del carrito
+        
         articulosCarrito = [...articulosCarrito, infoProducto];
     }
 
     carritoHTML();
-    guardarCarritoEnLocalStorage(); // Actualiza el carrito en localStorage
+    guardarCarritoEnLocalStorage(); 
 }
 
-// Muestra el carrito de compras en el HTML
 function carritoHTML() {
     // Limpiar el HTML
     limpiarHTML();
 
-    // Recorre el carrito y genera el HTML
     articulosCarrito.forEach(producto => {
         const { imagen, titulo, precio, cantidad, id } = producto;
         const row = document.createElement('tr');
@@ -128,25 +120,22 @@ function carritoHTML() {
             </td>
         `;
 
-        // Agrega el HTML del carrito en el tbody
         carrito.appendChild(row);
     });
 }
 
-// Elimina los productos del tbody
+
 function limpiarHTML() {
-    // Forma rápida de limpiar (recomendada)
     while (carrito.firstChild) {
         carrito.removeChild(carrito.firstChild);
     }
 }
 
-// Guardar el carrito en localStorage
+
 function guardarCarritoEnLocalStorage() {
     localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
 }
 
-// Cargar el carrito desde localStorage al cargar la página
 function cargarCarritoDesdeLocalStorage() {
     const carritoGuardado = JSON.parse(localStorage.getItem('carrito'));
     if (carritoGuardado) {
@@ -155,10 +144,9 @@ function cargarCarritoDesdeLocalStorage() {
     }
 }
 
-// Inicializa el carrito desde localStorage cuando la página se carga
 document.addEventListener('DOMContentLoaded', () => {
     cargarCarritoDesdeLocalStorage();
-    // Asegúrate de cargar los productos después de inicializar el carrito
+ 
     fetch('productos.json')
         .then(response => response.json())
         .then(data => {

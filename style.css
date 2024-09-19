@@ -46,6 +46,10 @@ img {
     font-weight: 800;
 }
 
+.logo:hover {
+    font-size: 27px;
+}
+
 .menu .navbar ul li {
     position: relative;
     float: left;
@@ -58,6 +62,10 @@ img {
     display: block;
 }
 
+.menu .navbar ul li a:hover {
+    font-size: 20px;
+}
+
 #menu {
     display: none;
 }
@@ -65,6 +73,7 @@ img {
 .menu-icono {
     width: 25px;
 }
+
 
 .menu label {
     cursor: pointer;
@@ -88,7 +97,7 @@ img {
     z-index: 1;
     background-color: #4e4e5076;
     padding: 20px;
-    min-width: 400px;
+    min-width: 500px;
 }
 
 table {
@@ -114,7 +123,7 @@ th, td {
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    padding: 0 200px;
+    padding: 0 20px;
 }
 
 .header-img {
@@ -233,8 +242,7 @@ th, td {
 }
 
 .product img {
-    width: 250px;
-    height: 370px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
