@@ -1,0 +1,8 @@
+[
+    { "id": 1, "imagen": "images/1.png", "titulo": "Elysium", "descripcion": "calidad premium", "precio": "$200" },
+    { "id": 2, "imagen": "images/2.png", "titulo": "Elysium", "descripcion": "calidad premium", "precio": "$200" },
+    { "id": 3, "imagen": "images/3.png", "titulo": "Elysium", "descripcion": "calidad premium", "precio": "$200" },
+    { "id": 4, "imagen": "images/4.png", "titulo": "Elysium", "descripcion": "calidad premium", "precio": "$200" },
+    { "id": 5, "imagen": "images/5.png", "titulo": "Elysium", "descripcion": "calidad premium", "precio": "$200" },
+    { "id": 6, "imagen": "images/6.png", "titulo": "Elysium", "descripcion": "calidad premium", "precio": "$200" }
+]
