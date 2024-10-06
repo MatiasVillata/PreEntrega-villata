@@ -1,15 +1,15 @@
 [
-    { "id": 1, "imagen": "images/1.webp", "titulo": "Producto 1", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 2, "imagen": "images/2.webp", "titulo": "Producto 2", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 3, "imagen": "images/3.webp", "titulo": "Producto 3", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 4, "imagen": "images/4.webp", "titulo": "Producto 4", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 5, "imagen": "images/5.webp", "titulo": "Producto 5", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 6, "imagen": "images/6.webp", "titulo": "Producto 6", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 7, "imagen": "images/7.webp", "titulo": "Producto 7", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 8, "imagen": "images/8.webp", "titulo": "Producto 8", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 9, "imagen": "images/9.webp", "titulo": "Producto 9", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 10, "imagen": "images/10.webp", "titulo": "Producto 10", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 11, "imagen": "images/11.webp", "titulo": "Producto 11", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 12, "imagen": "images/12.webp", "titulo": "Producto 12", "descripcion": "calidad premium", "precio": "$200" },
-    { "id": 13, "imagen": "images/13.webp", "titulo": "Producto 13", "descripcion": "calidad premium", "precio": "$200" }
+    { "id": 1, "imagen": "images/1.webp", "titulo": "Nike Dunk Low Retro", "descripcion": "calidad premium", "precio": "$209.999" },
+    { "id": 2, "imagen": "images/2.webp", "titulo": "Nike Dunk Low Retro", "descripcion": "calidad premium", "precio": "$209.999" },
+    { "id": 3, "imagen": "images/3.webp", "titulo": "Nike Dunk Low Retro Premium", "descripcion": "calidad premium", "precio": "$239.999" },
+    { "id": 4, "imagen": "images/4.webp", "titulo": "Nike Dunk Low Retro", "descripcion": "calidad premium", "precio": "$209.999" },
+    { "id": 5, "imagen": "images/5.webp", "titulo": "Nike GT Jump 2", "descripcion": "calidad premium", "precio": "$349.999" },
+    { "id": 6, "imagen": "images/6.webp", "titulo": "Nike Dunk Low Retro Premium", "descripcion": "calidad premium", "precio": "$239.999" },
+    { "id": 7, "imagen": "images/7.webp", "titulo": "Kobe 8 Protro", "descripcion": "calidad premium", "precio": "$329.999" },
+    { "id": 8, "imagen": "images/8.webp", "titulo": "Kobe 8 Protro", "descripcion": "calidad premium", "precio": "$329.999" },
+    { "id": 9, "imagen": "images/9.webp", "titulo": "Nike Dunk Low Retro", "descripcion": "calidad premium", "precio": "$209.999" },
+    { "id": 10, "imagen": "images/10.webp", "titulo": "Nike Dunk Low Retro", "descripcion": "calidad premium", "precio": "$209.999" },
+    { "id": 11, "imagen": "images/11.webp", "titulo": "Kobe 8 Protro Venice Beach", "descripcion": "calidad premium", "precio": "$329.999" },
+    { "id": 12, "imagen": "images/12.webp", "titulo": "LeBron XXI Freshwater", "descripcion": "calidad premium", "precio": "$359.999" },
+    { "id": 13, "imagen": "images/13.webp", "titulo": "Nike GT Jump 2", "descripcion": "calidad premium", "precio": "$349.999" }
 ]
